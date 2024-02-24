@@ -1,8 +1,9 @@
-#ifndef _SORT_H_
-#define _SORT_H_
+#ifndef SORT_H
+#define SORT_H
 
 #include <stddef.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**=====DS for linked lists=====*/
 
@@ -25,4 +26,4 @@ void print_list(const listint_t *list);
 void print_array(const int *array, size_t size);
 void bubble_sort(int *array, size_t size);
 
-#endif /*_SORT_H_*/
+#endif /*SORT_H*/
