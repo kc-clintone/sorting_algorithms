@@ -1,10 +1,9 @@
 #include "sort.h"
 /**
- * bubble_sort - This function sorts an array of integers in ascending
- * order using Bubble sort.
- * @array: The array to be sorted.
- * @size: The size of the array.
- * Description: Prints the array after each attempt.
+ * swap_ints- integer swaper.
+ * @a: integer a to be swaped.
+ * @b: integer b to be swapped.
+ * Description: Swapps integers.
 */
 
 void swap_ints(int *a, int *b)
@@ -15,6 +14,13 @@ tmp = *a;
 *a = *b;
 *b = tmp;
 }
+/**
+ * bubble_sort - This function sorts an array of integers in ascending
+ * order using Bubble sort.
+ * @array: The array to be sorted.
+ * @size: The size of the array.
+ * Description: Prints the array after each attempt.
+*/
 
 void bubble_sort(int *array, size_t size)
 {
@@ -39,4 +45,3 @@ bubbly = false;
 len--;
 }
 }
-
