@@ -1,3 +1,4 @@
+ls
 #ifndef SORT_H
 #define SORT_H
 
@@ -19,6 +20,17 @@ typedef struct listint_s
 	struct listint_s *prev;
 	struct listint_s *next;
 } listint_t;
+
+/**
+ * enum bool - Enumeration of Boolean values.
+ * @false: Equals 0.
+ * @true: Equals 1.
+*/
+typedef enum bool
+{
+	false = 0,
+	true
+} bool;
 
 /*===prototypes===*/
 void print_list(const listint_t *list);
