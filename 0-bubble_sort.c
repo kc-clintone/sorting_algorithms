@@ -6,35 +6,37 @@
  * @size: The size of the array.
  * Description: Prints the array after each attempt.
 */
+
+void swap_ints(int *a, int *b)
+{
+int tmp;
+
+tmp = *a;
+*a = *b;
+*b = tmp;
+}
+
 void bubble_sort(int *array, size_t size)
 {
-size_t x, r;
-int tmp;
-int swapped;
+size_t i, len = size;
+bool bubbly = false;
 
-if (array == NULL || size <= 1)
-{
+if (array == NULL || size < 2)
 return;
+
+while (bubbly == false)
+{
+bubbly = true;
+for (i = 0; i < len - 1; i++)
+{
+if (array[i] > array[i + 1])
+{
+swap_ints(array + i, array + i + 1);
+print_array(array, size);
+bubbly = false;
+}
+}
+len--;
+}
 }
 
-for (x = 0; x < size - 1; x++)
-{
-swapped = 0;
-
-for (r = 0; r < size - 1 - x; r++)
-{
-if (array[r] > array[r + 1])
-{
-tmp = array[r];
-array[r] = array[r + 1];
-array[r + 1] = tmp;
-swapped = 1;
-}
-}
-
-if (!swapped) 
-{
-break;
-}
-}
-}
