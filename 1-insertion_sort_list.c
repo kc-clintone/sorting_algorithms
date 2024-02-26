@@ -9,7 +9,7 @@
 void swapper(listint_t **hd, listint_t **a, listint_t *b)
 {
 (*a)->next = b->next;
-if (a->next != NULL)
+if (b->next != NULL)
 b->next->prev = *a;
 b->prev = (*a)->prev;
 b->next = *a;
