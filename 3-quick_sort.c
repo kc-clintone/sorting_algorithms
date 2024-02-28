@@ -19,7 +19,7 @@ int lom_part(int *arr, size_t sze, int l, int r)
 int *turn, top, bottom;
 
 turn = arr + r;
-for (tol = bottom = l; bottom < r; bottom++)
+for (turn = bottom = l; bottom < r; bottom++)
 {
 if (arr[bottom] < *turn)
 {
