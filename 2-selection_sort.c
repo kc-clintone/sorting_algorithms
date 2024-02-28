@@ -33,7 +33,7 @@ for (x = 0; x < size - 1; x++)
 min = array + x;
 for (y = x + 1; y < size; y++)
 min = (array[y] < *min) ? (array + y) : min;
-if ((array + y) != min)
+if ((array + x) != min)
 {
 swapper(array + x, min);
 print_array(array, size);
