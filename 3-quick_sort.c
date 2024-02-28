@@ -54,8 +54,8 @@ int seg;
 if (right - left > 0)
 {
 seg = lom_part(array, size, left, right);
-lom_sort(array, size, left, part - 1);
-lom_sort(array, size, part + 1, right);
+lom_sort(array, size, left, seg - 1);
+lom_sort(array, size, seg + 1, right);
 }
 }
 
