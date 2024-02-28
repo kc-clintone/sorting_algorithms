@@ -36,7 +36,7 @@ if (arr[top] > *turn)
 swapper(arr + top, turn);
 print_array(arr, sze);
 }
-return (turn);
+return (top);
 }
 
 /**
